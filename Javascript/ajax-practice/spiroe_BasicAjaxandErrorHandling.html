@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!-- Ethan Spiro -->
+<!-- Assignment 2: Part 2 -->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Part 2: Basic Ajax and Error Handling</title>
+	<script src="jquery.min.js"></script>
+
+	<!-- CSS -->
+	<style type="text/css">
+		
+		body {
+			font-family: sans-serif;
+		}
+
+		#other_section {
+			border: 4px solid black;
+			padding: 20px;
+			margin-top: 10px;
+		}
+
+	</style>
+
+	<!-- Javascript Functions-->
+	<script>
+
+	$(document).ready( function() {
+
+		//form submit event
+		$("#frm").submit( function(event) {
+			//prevent from calling other page
+			event.preventDefault();
+
+			//select based on page selection with find(), call load_success or load_error
+			$.ajax({url:$("select[name='allpages']").find('option:selected').val() + ".json", method: 'GET', dataType:"json", success: load_success, error: load_error});
+
+			//function for displaying json data upon successfull load
+			function load_success(data, info) {
+				//remove json data if its already there 
+				$("#results").empty();
+
+				//for every key-value pair in json data, display
+				for (var key in data) {
+					if (data.hasOwnProperty(key)) {
+						$("#results").append("<br>" + key + " : " + data[key]);
+					}
+				}
+			}
+
+			//function for displaying error messages and information upon unsuccesfful load
+			function load_error(data, info) {
+				//remove json data if its already there
+				$("#results").empty();
+
+				//display relative directory route
+				$("#results").append("<br>The requested page was: " + $.ajaxSettings.url.substring(0, $.ajaxSettings.url.lastIndexOf('/')) 
+					+ "/" + $("select[name='allpages']").find('option:selected').val() + ".json");
+				//error number
+				$("#results").append("<br>The error number was: " + data.status);
+				//error message
+				$("#results").append("<br>The error message was: " + data.statusText);
+			}
+
+		}); //end of form submit
+	}); //end of jquery
+</script>
+
+</head>
+
+<body>
+
+	<h1>Basic AJAX and Error Handling</h1>
+		
+		<!-- form for selecting page -->
+	<form method="post" id="frm">
+		<select name="allpages">
+			<option value="Roberto">Roberto</option>
+			<option value="Luisa">Luisa</option>
+			<option value="notFound">404 error</option>
+		</select>
+		<input type="submit" value="Display">
+	</form>
+
+	<!-- div section for displaying other pages content -->
+	<div id="other_section">
+		<h2>Other Page Content</h2>
+		<div id="results"></div>
+	</div>
+
+</body>
+</html>

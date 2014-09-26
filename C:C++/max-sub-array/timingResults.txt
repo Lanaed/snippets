@@ -1,0 +1,729 @@
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 100 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 0 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 0 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 0 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 0 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 0 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 0 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 0 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 0 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 10 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 0 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 1
+Average of algorithm2 runtimes = 0
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 200 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 0 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 10 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 10 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 10 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 10 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 0 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 10 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 10 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 10 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 10 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 8
+Average of algorithm2 runtimes = 0
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 300 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 20 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 30 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 30 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 20 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 30 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 30 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 20 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 30 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 20 milliseconds
+(alg 2)Run time 9 = 10 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 20 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 25
+Average of algorithm2 runtimes = 1
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 400 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 60 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 70 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 60 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 60 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 60 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 60 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 70 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 60 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 60 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 60 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 62
+Average of algorithm2 runtimes = 0
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 500 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 120 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 120 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 120 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 120 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 120 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 120 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 120 milliseconds
+(alg 2)Run time 7 = 10 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 110 milliseconds
+(alg 2)Run time 8 = 10 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 120 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 120 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 119
+Average of algorithm2 runtimes = 2
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 600 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 210 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 210 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 200 milliseconds
+(alg 2)Run time 3 = 10 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 200 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 210 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 210 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 200 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 210 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 210 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 200 milliseconds
+(alg 2)Run time 10 = 10 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 206
+Average of algorithm2 runtimes = 2
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 700 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 320 milliseconds
+(alg 2)Run time 1 = 0 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 330 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 330 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 330 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 330 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 320 milliseconds
+(alg 2)Run time 6 = 10 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 320 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 330 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 330 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 330 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 327
+Average of algorithm2 runtimes = 1
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 800 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 480 milliseconds
+(alg 2)Run time 1 = 10 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 480 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 490 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 490 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 490 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 490 milliseconds
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 480 milliseconds
+(alg 2)Run time 7 = 10 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 480 milliseconds
+(alg 2)Run time 8 = 10 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 480 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 490 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 485
+Average of algorithm2 runtimes = 3
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 900 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 1)Run time 1 = 690 milliseconds
+(alg 2)Run time 1 = 10 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 1)Run time 2 = 690 milliseconds
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 1)Run time 3 = 690 milliseconds
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 1)Run time 4 = 700 milliseconds
+(alg 2)Run time 4 = 0 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 1)Run time 5 = 690 milliseconds
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 1)Run time 6 = 690 milliseconds
+(alg 2)Run time 6 = 10 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 1)Run time 7 = 690 milliseconds
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 1)Run time 8 = 690 milliseconds
+(alg 2)Run time 8 = 0 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 1)Run time 9 = 700 milliseconds
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 1)Run time 10 = 690 milliseconds
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm1 runtimes = 692
+Average of algorithm2 runtimes = 2
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 1000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 10 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 0 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 0 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 10 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 0 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 0 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 0 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 10 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 0 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 0 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 3
+Average of algorithm3 runtimes = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 2000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 10 milliseconds
+(alg 3)Run time 1 = 10 milliseconds
+
+(alg 2)Run time 2 = 10 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 10 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 10 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 10 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 10 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 10 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 20 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 10 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 10 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 11
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 3000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 20 milliseconds
+(alg 3)Run time 1 = 10 milliseconds
+
+(alg 2)Run time 2 = 20 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 30 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 20 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 30 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 20 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 30 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 30 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 20 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 30 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 25
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 4000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 40 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 50 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 40 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 50 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 40 milliseconds
+(alg 3)Run time 5 = 10 milliseconds
+
+(alg 2)Run time 6 = 40 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 50 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 40 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 50 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 40 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 44
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 5000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 70 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 70 milliseconds
+(alg 3)Run time 2 = 10 milliseconds
+
+(alg 2)Run time 3 = 70 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 70 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 70 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 70 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 70 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 70 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 70 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 80 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 71
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 6000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 100 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 100 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 100 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 110 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 100 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 100 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 100 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 100 milliseconds
+(alg 3)Run time 8 = 10 milliseconds
+
+(alg 2)Run time 9 = 100 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 100 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 101
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 7000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 140 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 140 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 140 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 140 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 140 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 140 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 130 milliseconds
+(alg 3)Run time 7 = 10 milliseconds
+
+(alg 2)Run time 8 = 130 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 140 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 140 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 138
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 8000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 180 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 180 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 180 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 180 milliseconds
+(alg 3)Run time 4 = 10 milliseconds
+
+(alg 2)Run time 5 = 180 milliseconds
+(alg 3)Run time 5 = 0 milliseconds
+
+(alg 2)Run time 6 = 180 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 180 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 180 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 180 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 190 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 181
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~ Array of size 9000 ~~~~~~~~~~~~~~~~~~~~~~~
+(alg 2)Run time 1 = 230 milliseconds
+(alg 3)Run time 1 = 0 milliseconds
+
+(alg 2)Run time 2 = 230 milliseconds
+(alg 3)Run time 2 = 0 milliseconds
+
+(alg 2)Run time 3 = 230 milliseconds
+(alg 3)Run time 3 = 0 milliseconds
+
+(alg 2)Run time 4 = 230 milliseconds
+(alg 3)Run time 4 = 0 milliseconds
+
+(alg 2)Run time 5 = 220 milliseconds
+(alg 3)Run time 5 = 10 milliseconds
+
+(alg 2)Run time 6 = 220 milliseconds
+(alg 3)Run time 6 = 0 milliseconds
+
+(alg 2)Run time 7 = 230 milliseconds
+(alg 3)Run time 7 = 0 milliseconds
+
+(alg 2)Run time 8 = 230 milliseconds
+(alg 3)Run time 8 = 0 milliseconds
+
+(alg 2)Run time 9 = 230 milliseconds
+(alg 3)Run time 9 = 0 milliseconds
+
+(alg 2)Run time 10 = 230 milliseconds
+(alg 3)Run time 10 = 0 milliseconds
+
+Average of algorithm2 runtimes = 228
+Average of algorithm3 runtimes = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+
+<!-- Ethan Spiro -->
+<!-- Assignment 2: Part 1 -->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Part 1: JavaScript Multiplication Tables</title>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.validate.min.js"></script>
+
+	<!-- CSS -->
+	<style type="text/css">	
+		body {
+			font-family: sans-serif;
+		}
+		#theTable {
+			margin-top: 10px;
+		}
+	</style>
+
+	<!-- Javascript Functions-->
+	<script>
+
+	//check the page is ready to work with
+		$(document).ready(function() {
+
+			$("#theTable").hide(); //hide to begin with
+
+			//function for taking minimum and maximum and generating a 2d array of table values
+			//source: http://stackoverflow.com/questions/966225/how-can-i-create-a-two-dimensional-array-in-javascript
+			function build_array(minimum_val, maximum_val) {
+				//declare an array
+				var values_array = [];
+
+				//use a nested loop to create an array of arrays, and fill with multiplication table values
+				for (var i = 0; i < (max_value - minimum_val) + 1; i++) {
+					values_array[i] = [];
+					for (var j = 0; j < (max_value - minimum_val) + 1; j++) { //array of arrays
+						//1*1 1*2 1*3 etc...
+						values_array[i][j] = (minimum_val + i) * (minimum_val + j);
+					}
+				}
+				return values_array;
+			}
+
+			//function for taking an array, and turning it into an html table to display
+			function build_HTML_table(values_array, minimum_val, maximum_val) {
+
+				//first box is empty
+				var stringy = "<table cellpadding='2' border='2'><tr><td></td>";
+
+				for(i = 0; i < maximum_val - minimum_val + 1; i++) {
+					stringy += "<td>" + (minimum_val + i) + "</td>";
+				}
+				stringy += "</tr>";
+
+				for(i = 0; i < maximum_val - minimum_val + 1; i++) {
+					stringy += "<tr><td>" + (minimum_val + i) + "</td>";
+					for(j = 0; j < maximum_val - minimum_val + 1; j++) {
+						stringy += "<td>" + values_array[i][j] + "</td>";
+					}
+				}
+				stringy += "</table>";
+				return stringy; //aka the code to generate a table
+				}
+
+			//custom validation method to check max > min
+			//http://jqueryvalidation.org/jQuery.validator.addMethod/
+			jQuery.validator.addMethod("maxIsGreater", function(value, max_value, min_value) {
+				return parseInt(value) > parseInt($(min_value).val());
+			}, "* Max must be greater than min");
+
+
+			//Input validation
+			$("#frm").validate({
+				rules:
+				{
+					min: {
+						required: true,
+						range: [0, 100]
+					},
+					max: {
+						required: true,
+						range: [0, 100],
+						maxIsGreater: "#min"
+					}
+				},
+				//program flow for displaying table upon submit
+				submitHandler: function(form) {
+					//parse the values entered into integers
+					min_value = parseInt($("#min").val());
+					max_value = parseInt($("#max").val());
+					//build the array from the numbers
+					values_array = build_array(min_value, max_value);
+					//convert the array to an html table
+					stringy = build_HTML_table(values_array, min_value, max_value);
+					//show the table (orgininally hidden)
+					$("#theTable").show();
+					//remove the previous table if there was one
+					$("#theTable").children().remove();
+					//append to the new table
+					$("#theTable").append(stringy);
+				}
+			}); //validate ends here
+		}); //end of jquery
+	</script>
+
+</head>
+
+<body>
+	<h1>Part 1: JavaScript Multiplication Tables</h1>
+	<h3>(1) Enter two numbers (less than 100) for min and max. Max greater than min</h3>
+	<h3>(2) Click button to generate table</h3>
+	<h3>(3) View Results</h3>
+
+	<!-- form for entering a min and a max -->
+	<form id="frm">
+		<label for="min">Enter a minimum: <input type="text" id="min" name="min"><br></label>
+		<label for="max">Enter a maximum: <input type="text" id="max" name="max"><br></label>
+		<input type="submit" value="Generate Multiplication Table"><br>
+	</form>
+
+	<!-- div placeholder for displaying dynamically generated table -->
+	<div id="theTable"></div>
+	
+</body>
+</html>

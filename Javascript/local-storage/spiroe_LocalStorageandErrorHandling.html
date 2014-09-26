@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<!-- Ethan Spiro -->
+<!-- Assignment 2: Part 3 -->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Part 3: Local Storage and Error Handling</title>
+	<script src="jquery.min.js"></script>
+
+	<!-- CSS -->
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+
+	<!-- Javascript Functions-->
+	<script>
+
+	$(document).ready( function() {
+
+		//check to see if there is local storage (lecture 2.5)
+		localStorage = true;
+		if (!window["localStorage"]) {
+			localStorage = false; //set to false if there is no local storage
+		}
+
+		//click handler for save button
+		$("#saveme").click(function() {
+			if(localStorage) { //if local storage exists
+				localStorage["stringy"] = $("#userInput").val(); //set local storage to user input
+				$("#frm")[0].reset(); //reset the form
+			}
+			else { //output no local storage method
+				$("#output").text("");
+				$("#output").text("Local storage is disabled on the client, try using cookies");
+			}
+		});
+
+		//click handler for clear button
+		$("#clearme").click(function() {
+			if(localStorage) {
+				localStorage["stringy"] = "";
+				$("#frm")[0].reset();
+			}
+			else {
+				$("#output").text("");
+				$("#output").text("Local storage is disabled on the client, try using cookies");
+			}
+		});
+
+		//click handler for prepend button
+		$("#prependme").click(function() {
+			if(localStorage) {
+				localStorage["stringy"] = $("#userInput").val() + localStorage["stringy"];
+				$("#frm")[0].reset();
+			}
+			else {
+				$("#output").text("");
+				$("#output").text("Local storage is disabled on the client, try using cookies");
+			}
+		});
+
+		//click handler for append button
+		$("#appendme").click(function() {
+			if(localStorage) {
+				localStorage["stringy"] = localStorage["stringy"] + $("#userInput").val();
+				$("#frm")[0].reset();
+			}
+			else {
+				$("#output").text("");
+				$("#output").text("Local storage is disabled on the client, try using cookies");
+			}
+		});
+
+		//click handler for display button
+		$("#displayme").click(function() {
+			if(localStorage) {
+				$("#output").text("");
+				$("#frm")[0].reset();
+				$("#output").text(localStorage["stringy"]);
+			}
+			else {
+				$("#output").text("");
+				$("#output").text("Local storage is disabled on the client, try using cookies");
+			}
+		});
+	});
+</script>
+</head>
+
+<body>
+	<h1>Local Storage and Error Handling</h1>
+
+	<!-- form for entering a string -->
+	<form method="post" id="frm">
+		<label for="userInput">Enter a string: </label>
+		<input type="text" id="userInput">
+	</form>
+
+	<br />
+
+	<!-- div section for all the options -->
+	<div id="options">
+		<input type="button" id="saveme" value="Save String">
+		<input type="button" id="clearme" value="Clear String">
+		<input type="button" id="prependme" value="Prepend String">
+		<input type="button" id="appendme" value="Append String">
+		<input type="button" id="displayme" value="Display String">
+	</div>
+
+	<br />
+	<br />
+
+	<!-- div section for output -->
+	<h3>Output</h3>
+	<div id="output"></div>
+
+</body>
+</html>
