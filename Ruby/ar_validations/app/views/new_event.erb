@@ -1,0 +1,46 @@
+<body>
+  <br>
+  <%if @new_event %>
+
+  <form id="frm" action="/events/create" method="post" >
+    Name: <input type="text" name="name" value="<%=@new_event.organizer_name%>"><br><br>
+    <% if @new_event.errors.messages[:organizer_name] %>
+    <% @new_event.errors.messages[:organizer_name].each do |message| %>
+    <p> Organizer Name Error: <%= message %> </p>
+    <%end%>
+    <% end %>
+    Email: <input type="text" name="email" value="<%=@new_event.organizer_email%>"><br><br>
+    <% if @new_event.errors.messages[:organizer_email] %>
+    <% @new_event.errors.messages[:organizer_email].each do |message| %>
+    <p> Organizer Email Error: <%= message %> </p>
+    <%end%>
+    <% end %>
+    Title: <input type="text" name="title" value="<%=@new_event.title%>"><br><br>
+    <% if @new_event.errors.messages[:title] %>
+    <% @new_event.errors.messages[:title].each do |message| %>
+    <p> Title Error: <%= message %> </p>
+    <%end%>
+    <% end %>
+    Date: <input id="datepicker" type="text" name="date" value="<%=@new_event.date%>"><br><br>
+    <% if @new_event.errors.messages[:date] %>
+    <% @new_event.errors.messages[:date].each do |message| %>
+    <p> Date Error: <%= message %> </p>
+    <%end%>
+    <% end %>
+    <input type="submit" value="Create Event"></div>
+  </form>
+
+  <%else%>
+
+  <form id="frm" action="/events/create" method="post" >
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="text" name="email"><br><br>
+    Title: <input type="text" name="title"><br><br>
+    Date: <input id="datepicker" type="text" name="date"><br><br>
+    <input type="submit" value="Create Event"></div>
+  </form>
+
+  <%end%>
+</body>
+
+</html>

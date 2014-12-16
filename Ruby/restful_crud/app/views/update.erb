@@ -1,0 +1,9 @@
+<h1>Update a note</h1>
+<form action="/update/<%=@note_for_update.id%>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <p>Title:</p>
+  <p><input type="text" name="title" value="<%=@note_for_update.title%>"></p>
+  <p>Content:</p>
+  <p><input type="text" name="content" value="<%=@note_for_update.content%>"></p>
+  <p><input type="submit"></p>
+</form>

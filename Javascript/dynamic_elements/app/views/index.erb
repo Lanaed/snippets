@@ -1,0 +1,46 @@
+<div id="todo">
+
+  <div class="toolbox">
+    <form id='frm' action="/todos" method="post">
+      <input type="text" class="todo" name="content" value="Put your todo item here!"/>
+      <input type="submit" value="Add Todo"/>
+      <!-- <button class="add" type="submit">Add Todo</button> -->
+    </form>
+  </div>
+
+  <div class="todo_list">
+    <%@list.each do |todo|%>
+    <div class="todo">
+      <h2><%=todo.todo_content%></h2>
+        <form class="delete" action='/todos/<%=todo.id%>' method='post'>
+          <!-- to the delete -->
+          <input type='hidden' name='_method' value='delete'>
+          <input type='submit' value='delete'>
+        </form>
+        <form class="complete" action='/todos/<%=todo.id%>' method='post'>
+          <!-- to the update -->
+          <input type='hidden' name='_method' value='put'>
+          <input type='submit' value='complete'>
+        </form>
+    </div>
+    <%end%>
+  </div>
+
+</div>
+
+<div id="todo_template" style="display: none;">
+  <div class="todo">
+      <h2>ToDo Name</h2>
+        <form class="delete" action='#' method='post'>
+          <!-- to the delete -->
+          <input type='hidden' name='_method' value='delete'>
+          <input type='submit' value='delete'>
+        </form>
+        <form class="complete" action="#" method='post'>
+          <!-- to the update -->
+          <input type='hidden' name='_method' value='put'>
+          <input type='submit' value='complete'>
+        </form>
+    </div>
+  </div>
+</div>

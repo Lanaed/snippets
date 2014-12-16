@@ -1,0 +1,14 @@
+<% if session[:user_id] %>
+<div class="container">
+  <h1>Welcome User <%=@user.username%></h1>
+  <div id="all_surveys">
+    <h3>Your Surveys</h3>
+    <%@user.surveys.each do |survey|%>
+      <div><a href="/survey/<%=survey.id%>/take"><%=survey.title%></a></div>
+      <%end%>
+  </div>
+  <% else %>
+  <div class="container">
+    <h1>You need to log in to view gorilla notes</h1>
+  </div>
+  <% end %>

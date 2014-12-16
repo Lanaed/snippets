@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="grocery.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+
+
+
+
+
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="span6">
+        <h2>Store List</h2>
+        <table id="store_list">
+          <form type>
+          </form>
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="span6">
+        <h2>My Grocery List</h2>
+        <table id="grocery_list">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody class="list-body">
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>TOTAL:</td>
+              <td id="total_cost"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="grocery.js"></script>
+</html>

@@ -1,0 +1,11 @@
+<h1>P1 Notes</h1><br>
+
+<a href="/add">Add a note</a><br>
+
+<br><br>
+
+<% @notes.each do |note| %>
+  <a href="/<%=note.id%>"><%=note.title %></a> ---- <%=note.content%>
+  <a href="/update/<%=note.id%>">U</a> / <a href="/delete/<%=note.id%>">D</a>
+  <br><br>
+  <%end%>

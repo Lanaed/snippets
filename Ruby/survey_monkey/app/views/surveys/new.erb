@@ -1,0 +1,20 @@
+
+<%= @survey.errors.full_messages %>
+
+<form id="create_survey_form" action="/survey" method="post">
+  Title:<input type="text" id="title" name="title" value="<%= @survey.title %>" >
+  <input type="submit" id="create_survey"></input>
+</form>
+
+
+
+
+<!--         </div>
+    </div>
+    <div id="question_form">
+              Question:<input type="text" id="question_text" name="question"><br>
+              Option1:<input type="text" id="option1" name="option1"><br>
+              Option2:<input type="text" id="option2" name="option2"><br>
+              Option3:<input type="text" id="option3" name="option3"><br>
+        </div>
+    </div> -->
