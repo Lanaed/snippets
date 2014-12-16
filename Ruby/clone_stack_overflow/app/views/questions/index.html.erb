@@ -1,0 +1,11 @@
+<h1>Stack Overflow</h1>
+
+<%=@o.response%>
+<div id="all_questions">
+  <% @questions.each do |question| %>
+  <%= render question %>
+  <%end%>
+</div>
+
+<h1>New Question</h1>
+<div id="new-quest-form"><%= render 'form' %></div>

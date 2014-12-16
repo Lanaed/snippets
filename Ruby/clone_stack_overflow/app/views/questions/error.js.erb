@@ -1,0 +1,3 @@
+<% @question.errors.full_messages.each do |msg| %>
+  $('#new-quest-form').prepend('<li><%= msg %></li>')
+<% end %>

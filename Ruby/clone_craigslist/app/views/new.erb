@@ -1,0 +1,28 @@
+<h3> Add your Article for Sale</h3>
+<!--
+  issues is now with linking the category with the article-->
+  <form action="/article" method="post">
+    <label for="name">Category</label>
+    <select name="categories">
+      <% Category.all.each do |category|%>
+      <option value="<%=category.id%>"><%= category.name %></option>
+      <%end%>
+    </select><br>
+
+    <label for="title">Title</label>
+    <input type="string" name="title" value="" />
+    <br>
+
+    <label for="price">Price</label>
+    <input type="integer" name="price" value="" />
+    <br>
+
+    <label for="description">Description</label>
+    <input type="string" name="description" value="" />
+    <br>
+
+    <input type="submit" value="Add Article">
+  </form>
+
+
+

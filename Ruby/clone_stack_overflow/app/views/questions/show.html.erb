@@ -1,0 +1,14 @@
+<h1>Question: <%=@question.title%></h1>
+<h2>Body: <%=@question.body%></h2>
+<h3>Date: <%=@question.created_at%></h3>
+<h3><%= link_to 'Edit', edit_question_path(@question) %></h3>
+<br>
+<% @answers.each do |answer| %>
+  <%= render answer %>
+<br>
+<%end%>
+
+<h1>New Answer</h1>
+<%= render 'answers/form' %>
+
+<%= link_to 'Back', questions_path %>

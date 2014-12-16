@@ -1,0 +1,7 @@
+<div>
+  <div>Body: <%=answer.body%></div>
+  <div>Date: <%=answer.created_at%></div>
+  <div>Votes: <%=answer.votes.where(direction: 1).count - answer.votes.where(direction: -1).count%></div>
+  <div><%= link_to 'Up Vote',  upvote_question_answer_path(@question, answer), method: :put%></div>
+  <div><%= link_to 'Down Vote', downvote_question_answer_path(@question, answer), method: :put%></div>
+</div>

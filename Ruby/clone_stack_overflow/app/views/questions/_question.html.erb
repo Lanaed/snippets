@@ -1,0 +1,11 @@
+<div id="<%= question.id %>">
+    <div>Title: <%= link_to "#{question.title}", question_path(question)%></div>
+    <div>Body: <%=question.body%></div>
+    <div>Date: <%=question.created_at%></div>
+    <div class="question-votes">Votes: <%=question.votes.where(direction: 1).count - question.votes.where(direction: -1).count%></div>
+    <div><%= link_to 'Up Vote',  upvote_question_path(question), method: :put, remote: true%></div>
+    <div><%= link_to 'Down Vote', downvote_question_path(question), method: :put, remote: true%></div>
+    <div><%= link_to 'Edit', edit_question_path(question) %></div>
+    <div><%= link_to 'Delete', question_path(question), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+    <br>
+</div>
