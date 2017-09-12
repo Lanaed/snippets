@@ -1,0 +1,22 @@
+<%= render 'layouts/header'  %>
+
+<div class="non_nav">
+
+  <div class="row">
+
+    <div class="col-md-4 user_information">
+      <img src="<%=@user.picture%>" alt="" class="img-circle profile_picture">
+      <h3><%=%></h3>
+      <h4><%=@user.firstname%> <%=@user.lastname%></h4>
+      <h4><%=@user.email%></h4>
+      <hr>
+      <h5><%=%> miles run</h5>
+      <h5><%=@user.city%>, <%=@user.state%></h5>
+      <br>
+      <a href="/logout"><button type="button" class="btn btn-default">Log Out</button></a>
+    </div>
+
+
+
+  </div> <!-- non nav -->
+

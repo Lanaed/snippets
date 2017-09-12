@@ -1,0 +1,505 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.form-control:focus {
+  border-color: green;
+}
+/*============================== SPLASH SCREEN ============================== */
+
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 6.5em;
+  font-weight: 700;
+  font-family: "Helvetica Neue"
+}
+
+/* for button on upper right */
+
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #fff;
+  background-color: rgba(0,0,0,0.7);
+}
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: rgb(255,255,255);
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+  color: #333;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* side menu */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  margin-right: -400px;
+  overflow-y: auto;
+  background: #222;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  padding: 20px;
+  text-indent: 20px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #999;
+}
+
+
+#menu-toggle {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#sidebar-wrapper.active {
+  right: 400px;
+  width: 400px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* splash */
+
+.splash {
+  display: table; /*cool*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.github_image {
+  margin: auto;
+  width: 80%;
+}
+
+.github_image:hover {
+  transform: rotate(7deg);
+}
+
+/*============================== CONSTANT NAVBAR ============================== */
+
+/* ******** Nav **********/
+
+.container {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0px 20px 20px 20px;
+}
+
+.navbar {
+  opacity: 0.8;
+  background-color: black;
+  border-bottom: 0 none;
+  transition: .25s all linear;
+}
+
+.nav>li>a {
+  background-color: black;
+  color: #5f5f5f;
+  font-family: "Titillium Web", sans-serif; /*need the file for this font*/
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.nav>li>a:hover {
+  background-color: black;
+}
+
+.nav>li>a:hover {
+  color: red;
+}
+
+.nav {
+  width: 60%;
+  margin: auto;
+}
+
+/* ******** Body **********/
+
+.non_nav {
+  padding-top: 65px;
+  width: 95%;
+  margin: auto;
+}
+
+.content {
+  margin: 10px;
+/*  border: 1px solid red;
+*/}
+
+/*============================== PROFILE VIEW ============================== */
+
+/* ******** User Information **********/
+
+.user_information {
+  margin-top: 20px;
+  text-align: center;
+  border-right: 1px solid gray;
+}
+
+.user_information .profile_picture {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.profile_picture {
+  border: 4px solid #2c3e50;
+}
+
+/* ******** Team Information **********/
+
+.team_information {
+  text-align: center;
+}
+
+.team_information .team_picture {
+  margin-top: 20px;
+  height: 170px;
+  width: 170px;
+  border: 3px solid #2c3e50;
+}
+
+.team_stats {
+  margin-top: 20px;
+}
+
+/* ******** Team Chat **********/
+
+#team_chat_template {
+  display: none;
+}
+
+.team_chat_wrapper {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title_box {
+  background-color: black;
+  opacity: 0.8;
+  padding:10px;
+  border-radius: 5px;
+}
+.title_box label{
+  text-align: center;
+  color: white;
+}
+
+.team_chat_wrapper {
+  padding:10px;
+}
+
+/*comment spot*/
+.team_chat_wrapper .form-group:first-child, .actionBox .form-group:first-child {
+  width:80%;
+}
+
+/*submit button */
+.team_chat_wrapper .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+  width:18%;
+}
+
+.actionBox .form-group * {
+  width:100%;
+}
+
+.commentList {
+  padding: 0px;
+  list-style:none;
+}
+
+.commentList li {
+  margin: 0px;
+  margin-top:10px;
+}
+
+.commentList li > div {
+  display:table-cell;
+}
+
+.commenterImage {
+    /*width:30px;
+    height: 30px;*/
+    /*margin-right:5px;*/
+    height:100%;
+    float:left;
+  }
+  .commenterImage img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  .commentText p {
+    margin: 0px;
+  }
+  .sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+  }
+
+  .actionBox {
+    padding:10px;
+  }
+
+  /* ******** No Team **********/
+  .no_team {
+    text-align: center;
+  }
+
+  .no_team_content {
+    background-color: #bdc3c7;
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+
+  /*============================== CURRENT MATCH ============================== */
+
+  .btn-form-custom {
+    background-color:#FC4C02;
+    border-color: #FC4C02;
+    color: #fff !important;
+    font-family: "Lobster";
+    font-size: 15px;
+  }
+
+  .green_font{
+    color: #2c3e50;
+    float: left;
+  }
+
+  .red_font{
+    color: #c0392b;
+    float: left;
+  }
+
+
+  .current_match_header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .current_match_header h1{
+   font-size: 2em;
+ }
+
+ /*pulsing text for vs*/
+
+ .textClass {
+  font-size: 5em;
+  -webkit-animation: color_change 1s infinite alternate;
+  -moz-animation: color_change 1s infinite alternate;
+  -ms-animation: color_change 1s infinite alternate;
+  -o-animation: color_change 1s infinite alternate;
+  animation: color_change 1s infinite alternate;
+}
+@-webkit-keyframes color_change {
+ from { color: #2c3e50; }
+ to { color: #c0392b; }
+}
+@-moz-keyframes color_change {
+ from { color: #2c3e50; }
+ to { color: #c0392b; }
+}
+@-ms-keyframes color_change {
+ from { color: #2c3e50; }
+ to { color: #c0392b; }
+}
+@-o-keyframes color_change {
+ from { color: #2c3e50; }
+ to { color: #c0392b; }
+}
+@keyframes color_change {
+ from { color: #2c3e50; }
+ to { color: #c0392b; }
+}
+
+.team_show{
+  text-align: center;
+  padding: 0px;
+}
+
+.team_player {
+  padding: 0px;
+}
+
+.team_match_image {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.team_a {
+  color: #2c3e50;
+}
+.team_a img {
+  border: 4px solid #2c3e50;
+}
+
+.team_b {
+  color: #c0392b;
+}
+.team_b img {
+  border: 4px solid #c0392b;
+}
+
+.team_name_display {
+  font-size: 4.5em;
+}
+
+.lobstah {
+  font-family: "Lobster";
+  letter-spacing: 5px;
+}
+
+.modal-body img{
+  width: 100%;
+  margin: auto;
+}
+/*============================== TEAMS PAGE ============================== */
+
+.form_field_wrapper {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.search_teams_form {
+  width: 40%;
+  margin: auto;
+}
+
+.entire_team {
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.entire_team:hover .team_member{
+  opacity: .6;
+/*    background-color: black;
+*/    transform: scale(0.3);
+transition: all 0.5s ease-in-out;
+}
+
+.entire_team:hover .hidden_button1{
+  position: absolute;
+  display: block;
+  width: 87%;
+  z-index: 100;
+  bottom: 45.5%;
+}
+
+.entire_team:hover .hidden_button2{
+  position: absolute;
+  display: block;
+  width: 87%;
+  z-index: 100;
+  bottom: 34%;
+}
+
+.hidden_button1{
+  display: none;
+}
+
+.hidden_button2{
+  display: none;
+}
+
+
+.team_member {
+  text-align: center;
+}
+
+.team_member_image {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+  border: 2px solid #2c3e50;
+}
+
+.create_team_section {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+
+/*============================== TIMER ============================== */
+
+#hidden_end_time {
+  display: none;
+}
+
+.our_countdown {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+.our_countdown h1 {
+  font-size: 1.5em;
+}

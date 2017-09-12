@@ -1,0 +1,45 @@
+<!-- Products Table -->
+<html>
+<body>
+
+<div>
+	<form method="post" action="spiroe_addProducts.php">
+
+		<fieldset>
+			<legend>Products</legend>
+			<p>Name: <select name="name">
+				<option value="6 shortboard">6'0" Shortboard</option>
+				<option value="6.2 shortboard">6'2" Shortboard</option>
+				<option value="6.4 shortboard">6'4" Shortboard</option>
+				<option value="7.0 funboard">7'0" Funboard</option>
+				<option value="7.6 funboard">7'6" Funboard</option>
+				<option value="9.0 longboard">9'0" Longboard</option>
+				<option value="9.6 longboard">9'6" Longboard</option>
+				<option value="10.0 longboard">10'0" Longboard</option>
+				<option value="10.5 paddleboard">10'5" Paddleboard</option>
+				<option value="11.0 paddleboard">11'0" Paddleboard</option>
+				<option value="11.5 paddleboard">11'5" Paddleboard</option>
+				<option value="paddle">Paddle</option>
+				<option value="leash">Leash</option>
+				<option value="tshirt">Tshirt</option>
+			</select> </p>
+			<p>MSRP: <input type="text" name="msrp" /></p>
+			<p>Buy Price: <input type="text" name="buyprice" /></p>
+			<p>Quantity in Stock: <input type="text" name="quantity" /></p>
+			<p>Description: <input type="text" name="description" /></p>
+			<p>Category: <select name="category">
+				<option value="accessories">Accessories</option>
+				<option value="surfboards">Surfboards</option>
+				<option value="clothing">Clothing</option>
+			</select> </p>
+		</fieldset>
+
+		<!-- add button -->
+		<p>
+			<input type="submit" name="addProduct" value="Add New Product"/>
+		</p>
+	</form>
+</div>
+
+</body>
+</html>

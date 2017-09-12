@@ -1,0 +1,93 @@
+<%= render 'layouts/header'  %>
+
+<div class="non_nav">
+
+  <div class="row">
+    <%= render 'user_sidebar' %>
+
+    <% if @user.team %>
+      <div class="col-md-8 team_information">
+        <h1><%=@team.name%></h1>
+        <h3><%=@team.description%></h3>
+        <div class="row">
+
+          <% @teammates.each do |teammate| %>
+          <div class="col-md-4">
+            <img src="<%=teammate.profile_img%>" alt="" class="img-circle team_picture">
+            <div>
+              <h6><%=teammate.strava_name%></h6>
+              <h6><%=teammate.firstname%> <%=teammate.lastname%></h6>
+              <h6><%=total_distance(teammate) %> meters run</h6> <!-- not implemented -->
+            </div>
+          </div>
+          <% end %>
+
+        <div class="team_stats">
+          <p><%= total_distance_team(@all_team_members) %> total meters run || <%=@team.total_wins%> - <%=@team.total_losses%> record</p> <!-- not implemented -->
+          </div>
+          <div class="team_messages">
+          </div>
+
+          <div class="team_chat_wrapper">
+
+            <div class="title_box">
+              <label>Team Chat</label>
+            </div>
+            <div class="actionBox">
+
+
+          <%= form_for :team_chat, url: team_chats_path, remote: true,  html: { id: "chat",:'data-type' => 'json'} do |f| %>
+
+            <%= f.text_field :content, :class=>"form-control", :placeholder => "chat" %>
+            <%= f.hidden_field :user_id, :value => @user.id %>
+          <% end %>
+
+
+
+
+          <!--     <form id="team_chat_form" class="form-inline" role="form" accept-charset="UTF-8" action="/team_chats" method="post">
+                <div class="form-group">
+                  <input id="article_title" class="form-control" name="team_chats[content]" type="text" />
+                </div>
+                <div class="form-group">
+                  <input name="commit" type="submit" value="Create" class="btn btn-default" />
+                </div>
+              </form> -->
+
+              <ul id="team_chat_target" class="commentList">
+                <% @team_chats.each do |chat| %>
+                <li>
+                  <div class="commenterImage">
+                    <img src="<%=chat.user.profile_img%>" />
+                  </div>
+                  <div class="commentText">
+                    <p class="green_font"><%=chat.content%></p> <span class="date sub-text"><%=chat.updated_at%></span>
+
+                  </div>
+                </li>
+
+                <%end%>
+
+
+                <%= render 'team_chat_template' %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <% else %>
+      <div class="col-md-8 no_team">
+        <div class="no_team_content">
+          <h3>No team selected</h3>
+          <br>
+          <a href="/teams"><button type="button" class="btn btn-success">Explore Teams <i class="fa fa-search"></i> </button></a>
+        </div>
+      </div>
+
+    <% end %>
+
+  </div> <!-- non nav -->
+
+</div>
+

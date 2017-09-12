@@ -1,0 +1,184 @@
+
+<!-- *********** Curent Match active section *********** -->
+
+<!-- ***** Game information ***** -->
+<%= render 'layouts/header'  %>
+
+<div class="non_nav">
+  <% if @game %>
+  <div class="current_match_header">
+    <h1 class="textClass"><%=@game.name%></h1>
+    <h4><%=@game.description%></h2>
+    </div>
+
+    <!-- ***** Display players in order (OR maybe team vs team layout) ***** -->
+    <div class="row">
+
+      <div class="col-md-6 team_show">
+
+        <% @home_team_users.each do |player| %>
+
+        <div class="col-md-3 team_player team_a">
+          <img src="<%=player.profile_img%>" alt="" class="img-circle team_match_image">
+          <p><%=player.firstname%> <%=player.lastname%></p>
+          <p><%=player.city%>, <%=player.state%></p>
+        </div>
+
+        <%end%>
+      </div>
+
+      <div class="col-md-6 team_show">
+
+       <% @away_team_users.each do |player| %>
+
+       <div class="col-md-3 team_player team_b">
+        <img src="<%=player.profile_img%>" alt="" class="img-circle team_match_image">
+        <p><%=player.firstname%> <%=player.lastname%></p>
+        <p><%=player.city%>, <%=player.state%></p>
+      </div>
+
+      <%end%>
+    </div>
+  </div><!-- end row -->
+
+  <br><br>
+
+  <!-- ***** Current score ***** -->
+
+  <div class="row">
+
+    <div class="col-md-5 team_show team_a">
+      <h3 class="team_name_display"><%=@home_team.name%></h3>
+    </div>
+
+
+    <div class="col-md-2 team_show">
+      <h1 class="textClass"> --- VS ---</h1>
+    </div>
+
+    <div class="col-md-5 team_show team_b">
+      <h3 class="team_name_display"><%=@away_team.name%></h3>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-5 team_show team_a">
+      <h1><%=@home_total%> meters</h1>
+    </div>
+
+    <div class="col-md-2 team_show">
+      <div id="hidden_end_time"><%=@end_time%></div>
+
+      <h3><div class="our_countdown"></div>
+        <script type="text/javascript">
+        $(".our_countdown")
+        .countdown($("#hidden_end_time").text(), function(event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+            );
+        });
+      </script></h3>
+
+    </div>
+
+
+    <div class="col-md-5 team_show team_b">
+      <h1><%=@away_total%> meters</h1>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- ***** Team A run logs ***** -->
+
+  <div class="row">
+
+    <div class="col-md-4 team_show team_a">
+      <ul class="list-group">
+        <% @home_activities.each do |activity| %>
+
+        <li class="list-group-item"><%=activity.user.firstname%> <%=activity.user.lastname%> ran <%=activity.distance%> meters <a href="" data-toggle="modal" data-target="#<%=activity.id%>"> <i class="fa fa-map-marker"></i></a></li>
+
+        <div id="<%=activity.id%>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<%=activity.id%>Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="<%=activity.map_polyline%>" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+        <%end%>
+      </ul>
+    </div>
+
+    <!-- ***** Talk shit forum ***** -->
+
+    <div class="col-md-4 team_show">
+
+      <div class="title_box">
+        <label>Talk Smack</label>
+      </div>
+
+      <div class="actionBox">
+
+
+        <%= form_for :trash_talk, format: :json, url: trash_talks_path, remote: true,  html: { id: "trashtalk",:'data-type' => 'json'} do |f| %>
+        <%= f.text_field :content, :class=>"form-control", :placeholder => "chat" %>
+        <%= f.hidden_field :user_id, :value => @user.id %>
+        <%= f.hidden_field :game_id, :value => @game.id %>
+        <% end %>
+
+
+        <ul id="trashtalklist" class="commentList">
+          <% @game.trash_talks.order("created_at DESC").each do |trashtalk| %>
+          <li>
+            <div class="commenterImage">
+              <img src=<%=trashtalk.user.profile_img %> />
+            </div>
+
+
+            <div class="commentText">
+              <% if trashtalk.user.team_id == @user.team_id %>
+              <p class="green_font"><%=trashtalk.content%></p><br><span class="date sub-text green_font"><%=trashtalk.created_at%></span>
+              <% else %>
+              <p class="red_font"><%=trashtalk.content%></p><br><span class="date sub-text red_font"><%=trashtalk.created_at%></span>
+              <% end %>
+
+            </div>
+          </li>
+          <%end%>
+          <%= render 'trash_talk_template' %>
+        </ul>
+      </div> <!-- actin box ends -->
+    </div>
+
+
+    <!-- ***** Team B run logs ***** -->
+
+    <div class="col-md-4 team_show team_b">
+      <ul class="list-group">
+        <% @away_activities.each do |activity| %>
+
+        <li class="list-group-item"><%=activity.user.firstname%> <%=activity.user.lastname%> ran <%=activity.distance%> meters <a href="" data-toggle="modal" data-target="#<%=activity.id%>"> <i class="fa fa-map-marker"></i></a></li>
+
+        <div id="<%=activity.id%>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<%=activity.id%>Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="<%=activity.map_polyline%>" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <%end%>
+      </ul>
+    </div>
+
+  </div>
+  <% else %>
+  <h3>Not in a game</h3>
+  <% end %>
+</div>

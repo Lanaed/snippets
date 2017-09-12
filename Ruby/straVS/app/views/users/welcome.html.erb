@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/application.css"> -->
+
+  <title></title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-thumbs-up"></i></a>
+
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-thumbs-up"></i></a>
+      <li class="sidebar-brand">About</li>
+      <li>StraVS. is a competitive biking and running application built using the Strava API. Users sign in with an exisiting Strava account and form teams with their friends or peers. Teams challenge eachother to week-long battles of endurance and athletics. A winner is determined at the end of the week by summing the total distance run by each team.</li>
+      <li>Visit our github page to learn more:<br><br>
+      <div><a href="https://github.com/muratdbc/strava"><%=image_tag("github.png", class: "github_image")%></a></li></div>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="top" class="splash">
+    <div class="text-vertical-center">
+      <h1>straVS.</h1>
+      <h3>Form teams. Work out. Win bragging rights.</h3>
+      <br>
+      <a id=""href="https://www.strava.com/oauth/authorize?client_id=3744&response_type=code&redirect_uri=http://localhost:3000/strava_auth&approval_prompt=auto"><%=image_tag("strava_connect.png")%></a>
+    </div>
+  </header>
+
+
+</body>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/application.js"></script> -->
+
+<script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // $("")
+
+
+    </script>
+
+
+
+
+
+    </html>

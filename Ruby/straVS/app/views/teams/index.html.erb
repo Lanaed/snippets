@@ -1,0 +1,126 @@
+<%= render 'layouts/header'  %>
+
+<div class="non_nav">
+
+  <!-- Create a new team -->
+  <div class="create_team_section">
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#createTeam">
+      <i class="fa fa-plus"></i> Create a team
+    </button>
+  </div>
+
+  <!-- Modal for creating a team -->
+  <div class="modal fade" id="createTeam" tabindex="-1" role="dialog" aria-labelledby="createTeamLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="createTeamLabel">Create a team</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form-horizontal">
+            <fieldset>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="team_name">Team Name</label>
+                <div class="col-md-4">
+                  <input id="team_name" name="team_name" type="text" placeholder="name" class="form-control input-md" required="">
+
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="team_description">Team Description</label>
+                <div class="col-md-4">
+                  <textarea class="form-control" id="team_description" name="team_description"></textarea>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="team_location">Location</label>
+                <div class="col-md-4">
+                  <input id="team_location" name="team_location" type="text" placeholder="location" class="form-control input-md" required="">
+
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form_field_wrapper">
+  <%= form_tag teams_path, :class=>"search_teams_form", method: "GET" do %>
+    <%= text_field_tag :query, nil, :class=>"form-control search_terms_form", :placeholder => "search" %>
+  <% end %>
+</div>
+
+  <!-- just need one of these -->
+  <div class="row">
+    <% @teams.each do |team| %>
+    <div class="col-md-4 entire_team">
+      <h3><%=team.name%></h3>
+      <h5><%=team.description%></h5><br>
+
+      <div class="row sub_row">
+        <div class="col-md-6 team_member">
+          <img src="<%=team.users[0].profile_img%>" alt="" class="img-circle team_member_image">
+          <p><%=team.users[0].firstname%> <%=team.users[0].lastname%></p>
+          <p><%=team.users[0].state%></p>
+          <% if team.users[0].activities.length > 0%>
+          <p>Last run: <%=team.users[0].activities.last.distance%></p>
+          <%else%>
+          <p>No recent runs</p>
+          <%end%>
+        </div>
+        <div class="col-md-6 team_member">
+          <img src="<%=team.users[1].profile_img%>" alt="" class="img-circle team_member_image">
+          <p><%=team.users[1].firstname%> <%=team.users[1].lastname%></p>
+          <p><%=team.users[1].state%></p>
+          <% if team.users[1].activities.length > 0%>
+          <p>Last run: <%=team.users[1].activities.last.distance%></p>
+          <%else%>
+          <p>No recent runs</p>
+          <%end%>
+        </div>
+      </div> <!-- sub row -->
+      <div class="row sub_row">
+        <div class="col-md-6 team_member">
+          <img src="<%=team.users[2].profile_img%>" alt="" class="img-circle team_member_image">
+          <p><%=team.users[2].firstname%> <%=team.users[2].lastname%></p>
+          <p><%=team.users[2].state%></p>
+          <% if team.users[2].activities.length > 0%>
+          <p>Last run: <%=team.users[2].activities.last.distance%></p>
+          <%else%>
+          <p>No recent runs</p>
+          <%end%>
+        </div>
+        <div class="col-md-6 team_member">
+          <img src="<%=team.users[3].profile_img%>" alt="" class="img-circle team_member_image">
+          <p><%=team.users[3].firstname%> <%=team.users[3].lastname%></p>
+          <p><%=team.users[3].state%></p>
+          <% if team.users[3].activities.length > 0%>
+          <p>Last run: <%=team.users[3].activities.last.distance%></p>
+          <%else%>
+          <p>No recent runs</p>
+          <%end%>
+        </div>
+        <div class="hidden_button1"><button type="button" class="btn btn-danger"> <i class="fa fa-flash"></i> Challenge Team</button></div>
+        <div class="hidden_button2"><button type="button" class="btn btn-success"> <i class="fa fa-plus"></i> Join Team</button></div>
+      </div>
+    </div>
+
+    <%end%>
+
+  </div>
+
+</div>

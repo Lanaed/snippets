@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  strava_name: MyString
+  token: MyString
+  refreshtoken: MyString
+  team_id: 
+
+two:
+  strava_name: MyString
+  token: MyString
+  refreshtoken: MyString
+  team_id: 
